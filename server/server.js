@@ -7,7 +7,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "https://your-netlify-site.netlify.app", // Replace with actual Netlify domain
+    origin: "https://watchnook.netlify.app/", // Replace with actual Netlify domain
     credentials: true,
   })
 );
