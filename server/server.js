@@ -3,6 +3,14 @@ const app = express();
 require("dotenv").config();
 const dbConfig = require("./config/dbConfig");
 app.use(express.json());
+const cors = require("cors");
+
+app.use(
+  cors({
+    origin: "https://your-netlify-site.netlify.app", // Replace with actual Netlify domain
+    credentials: true,
+  })
+);
 
 
 const usersRoute = require("./routes/usersRoute");
