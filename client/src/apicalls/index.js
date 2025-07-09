@@ -1,8 +1,10 @@
 import axios from 'axios';
 
+
 export const axiosInstance = axios.create({
-      headers : {
-        'Content-Type': 'application/json',
-        authorization : `Bearer ${localStorage.getItem('token')}`
-      }
+  baseURL: 'https://watchnook.onrender.com', // no trailing slash
+  headers: {
+    'Content-Type': 'application/json',
+    authorization: `Bearer ${localStorage.getItem('token')}`
+  }
 });
