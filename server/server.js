@@ -7,7 +7,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "https://watchnook.netlify.app", // Replace with actual Netlify domain
+    origin: [ "https://watchnook.netlify.app","http://localhost:3000"],   //"http://localhost:3000",
     credentials: true,
   })
 );
